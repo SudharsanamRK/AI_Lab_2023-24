@@ -1,8 +1,10 @@
 # Ex.No: 7  Logic Programming –  Logic Circuit Design
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE: 28-03-2025                                                                            
+### REGISTER NUMBER : 212222040163
+
 ### AIM: 
 To write a logic program to design a circuit like half adder and half subtractor.
+
 ###  Algorithm:
 1. Start the Program
 2. Design a AND gate logic if both inputs are 1 then output is 1.
@@ -15,18 +17,37 @@ To write a logic program to design a circuit like half adder and half subtractor
 
 ### Program:
 
+```prolog
+% Half Adder
+halfadder(X, Y, Sum, Carry) :-  
+    xor(X, Y, Sum),  
+    and(X, Y, Carry).  
 
+% Half Subtractor
+halfsubtractor(X, Y, Difference, Borrow) :-  
+    xor(X, Y, Difference),  
+    not(X, NA),  
+    and(NA, Y, Borrow).  
 
+% AND Gate
+and(0, 0, 0).  
+and(0, 1, 0).  
+and(1, 0, 0).  
+and(1, 1, 1).  
 
+% XOR Gate
+xor(0, 0, 0).  
+xor(0, 1, 1).  
+xor(1, 0, 1).  
+xor(1, 1, 0).  
 
-
-
-
-
-
+% NOT Gate
+not(0, 1).  
+not(1, 0).
+```
 
 ### Output:
-
+![image](https://github.com/user-attachments/assets/cfe97ee0-b764-4d85-a562-58f139e976ca)
 
 
 ### Result:
