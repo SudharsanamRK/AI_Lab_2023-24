@@ -16,59 +16,34 @@ Write a Prolog program to build a computer maintenance expert system.
      
 ### Program:
 ```prolog
-hypothesis(Patient, german_measles) :-
-    symptom(Patient, fever),
-    symptom(Patient, headache),
-    symptom(Patient, runny_nose),
-    symptom(Patient, rash).
+fault(printer_head) :-
+    problem(not_printing),
+    problem(missing_dots),
+    problem(nonuniform_printing).
 
-hypothesis(Patient, flu) :-
-    symptom(Patient, fever),
-    symptom(Patient, headache),
-    symptom(Patient, body_ache),
-    symptom(Patient, conjunctivitis),
-    symptom(Patient, chills),
-    symptom(Patient, sore_throat),
-    symptom(Patient, runny_nose),
-    symptom(Patient, cough).
+fault(ribbon) :-
+    problem(not_printing),
+    problem(missing_dots),
+    problem(spread_ink).
 
-hypothesis(Patient, common_cold) :-
-    symptom(Patient, headache),
-    symptom(Patient, sneezing),
-    symptom(Patient, sore_throat).
+fault(paper) :-
+    problem(not_printing),
+    problem(paper_jam),
+    problem(out_of_paper).
 
-hypothesis(Patient, chicken_pox) :-
-    symptom(Patient, fever),
-    symptom(Patient, chills),
-    symptom(Patient, body_ache),
-    symptom(Patient, rash).
+fault(motherboard) :-
+    problem(long_beep),
+    problem(short_beep).
 
-hypothesis(Patient, measles) :-
-    symptom(Patient, cough),
-    symptom(Patient, sneezing),
-    symptom(Patient, runny_nose).
+fault(hard_disc) :-
+    problem(two_short_beeps),
+    problem(blank_display).
 
-hypothesis(Patient, mumps) :-
-    symptom(Patient, fever),
-    symptom(Patient, swollen_glands).
-
-symptom(raju, headache).
-symptom(raju, sneezing).
-symptom(raju, sore_throat).
-
-symptom(kumar, fever).
-symptom(kumar, headache).
-symptom(kumar, runny_nose).
-symptom(kumar, rash).
-
-symptom(sita, fever).
-symptom(sita, headache).
-symptom(sita, body_ache).
-symptom(sita, conjunctivitis).
-symptom(sita, chills).
-symptom(sita, sore_throat).
-symptom(sita, runny_nose).
-symptom(sita, cough).
+problem(not_printing).
+problem(missing_dots).
+problem(spread_ink).
+problem(two_short_beeps).
+problem(blank_display).
 ```
 
 ### Output:
