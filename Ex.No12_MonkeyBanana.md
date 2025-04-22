@@ -15,7 +15,7 @@ Step 6:  Obtain the plan for given problem.<br>
 Step 7: Stop the program.<br> 
 
 ### Program:
-```prolog
+```pddl
 (define (domain monkey)
  (:requirements :strips)
  (:constants monkey box knife bananas glass waterfountain)
@@ -66,7 +66,7 @@ Step 7: Stop the program.<br>
  :effect (haswater)))
 ```
 #### Input
-```prolog
+```pddl
  (define (problem pb1)
  (:domain monkey)
  (:objects p1 p2 p3 p4 bananas monkey box knife)
