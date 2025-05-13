@@ -197,7 +197,7 @@ joblib.dump(model, "parkinsons_model.sav")
 
 ## Output:
 ![WhatsApp Image 2025-05-13 at 11 40 57_de775f8a](https://github.com/user-attachments/assets/a2bc5042-9db9-48c2-b02f-09126a8e4615)
-
+Accuracy: 87.50%
 
 ### Result:
 Thus the system was trained successfully and the prediction was carried out.
