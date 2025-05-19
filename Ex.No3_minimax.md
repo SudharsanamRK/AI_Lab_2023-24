@@ -1,21 +1,24 @@
-# Ex.No: 3  Implementation of Minimax Search
-### DATE: 11-03-2025                                                                           
-### REGISTER NUMBER : 212222040163
-### AIM: 
-Write a mini-max search algorithm to find the optimal value of MAX Player from the given graph.
-### Algorithm:
-1. Start the program
-2. import the math package
-3. Specify the score value of leaf nodes and find the depth of binary tree from leaf nodes.
-4. Define the minimax function
-5. If maximum depth is reached then get the score value of leaf node.
-6. Max player find the maximum value by calling the minmax function recursively.
-7. Min player find the minimum value by calling the minmax function recursively.
-8. Call the minimax function  and print the optimum value of Max player.
-9. Stop the program. 
+# Ex No: 3 - Implementation of Minimax Search
 
-### Program:
-```py
+**Date:** 18-03-2025  
+**Register Number:** 212222040163  
+
+## AIM:
+Write a Mini-Max search algorithm to find the optimal value of the MAX Player from the given game tree.
+
+## ALGORITHM:
+1. Start the program.  
+2. Import the `math` package.  
+3. Specify the score values of the leaf nodes and find the depth of the binary tree using the number of leaf nodes.  
+4. Define the `minimax()` function.  
+5. If the maximum depth is reached, return the score value of the current leaf node.  
+6. If it is the MAX player’s turn, find the maximum value by calling the `minimax()` function recursively.  
+7. If it is the MIN player’s turn, find the minimum value by calling the `minimax()` function recursively.  
+8. Call the `minimax()` function and print the optimum value of the MAX player.  
+9. Stop the program.
+
+## PROGRAM:
+```python
 import math
 
 def minimax(curDepth, nodeIndex, maxTurn, scores, targetDepth):
@@ -42,6 +45,5 @@ print("The optimal value is:", minimax(0, 0, True, scores, treeDepth))
 ### Output:
 ![image](https://github.com/user-attachments/assets/765cb41b-2844-46dc-9845-2c45f7f1c2f3)
 
-
 ### Result:
-Thus the optimum value of max player was found using minimax search.
+Thus, the optimum value of the MAX player was successfully found using the Minimax search algorithm.
