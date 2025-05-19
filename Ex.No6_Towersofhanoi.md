@@ -9,13 +9,13 @@ To write a logic program to solve the **Towers of Hanoi** problem using **SWI-PR
 ## ALGORITHM:
 1. **Start** the program.  
 2. Write rules to solve the Towers of Hanoi problem in Prolog.  
-   - a) If there is only **one disk**, move the disk from X to Y.  
-   - b) If the number of disks is greater than 1:  
-     - i) Move **N−1 disks** from source peg **X** to auxiliary peg **Z**.  
-     - ii) Move the **Nth disk** from **X** to **Y**.  
-     - iii) Move the **N−1 disks** from auxiliary peg **Z** to destination peg **Y**.  
-3. Run the program to display the steps.  
-4. **Stop** the program.
+   a) If there is only **one disk**, move the disk from X to Y.  
+   b) If the number of disks is greater than 1:
+   -  Move **N−1 disks** from source peg **X** to auxiliary peg **Z**.  
+   -  Move the **Nth disk** from **X** to **Y**.  
+   -  Move the **N−1 disks** from auxiliary peg **Z** to destination peg **Y**.  
+4. Run the program to display the steps.  
+5. **Stop** the program.
 
 ## PROGRAM:
 ```prolog
