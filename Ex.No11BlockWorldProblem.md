@@ -1,21 +1,27 @@
-# Ex.No: 11  Planning –  Block World Problem 
+# Ex No: 11 -  Planning: Block World Problem  
 ### DATE: 15-04-2025                                                                           
 ### REGISTER NUMBER : 212222040163
+
 ### AIM: 
-To find the sequence of plan for Block word problem using PDDL  
-###  Algorithm:
-Step 1 :  Start the program <br>
-Step 2 : Create a domain for Block world Problem <br>
-Step 3 :  Create a domain by specifying predicates clear, on table, on, arm-empty, holding. <br>
-Step 4 : Specify the actions pickup, putdown, stack and un-stack in Block world problem <br>
-Step 5 :  In pickup action, Robot arm pick the block on table. Precondition is Block is on table and no other block on specified block and arm-hand empty.<br>
-Step 6:  In putdown action, Robot arm place the block on table. Precondition is robot-arm holding the block.<br>
-Step 7 : In un-stack action, Robot arm pick the block on some block. Precondition is Block is on another block and no other block on specified block and arm-hand empty.<br>
-Step 8 : In stack action, Robot arm place the block on under block. Precondition is Block holded by robot arm and no other block on under block.<br>
-Step 9 : Define a problem for block world problem.<br> 
-Step 10 : Obtain the plan for given problem.<br> 
-     
-### Program:
+To find the sequence of plan for Block world problem using PDDL.
+
+### Algorithm:
+1. Start the program.  
+2. Create a domain for Block world Problem.  
+3. Define predicates: `clear`, `on-table`, `on`, `arm-empty`, and `holding`.  
+4. Specify actions: `pickup`, `putdown`, `stack`, and `unstack`.  
+5. In `pickup` action, the robot arm picks a block from the table.  
+   Precondition: Block is on the table, clear, and the arm is empty.  
+6. In `putdown` action, the robot arm places a block on the table.  
+   Precondition: The robot arm is holding the block.  
+7. In `unstack` action, the robot arm picks a block from another block.  
+   Precondition: Block is on another block, clear, and arm is empty.  
+8. In `stack` action, the robot arm places a block on another block.  
+   Precondition: Robot arm is holding the block, and the under block is clear.  
+9. Define a problem for the Block world problem.  
+10. Obtain the plan for the given problem.
+
+### Program (Domain):
 ```lisp
 (define (domain blocksworld)
 (:requirements :strips :equality)
@@ -46,7 +52,7 @@ Step 10 : Obtain the plan for given problem.<br>
                (not (on ?ob ?underob)) (not (clear ?ob)) (not (arm-empty)))))
 ```
 
-### Input 
+### Input (Problem):
 ```lisp
 (define (problem pb1)
    (:domain blocksworld)
@@ -60,4 +66,4 @@ Step 10 : Obtain the plan for given problem.<br>
 
 
 ### Result:
-Thus the plan was found for the initial and goal state of block world problem.
+Thus, the plan was found for the initial and goal states of the block world problem.
