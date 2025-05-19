@@ -1,4 +1,4 @@
-# Experiment No: 2 - Implementation of Depth First Search
+# Ex No: 2 - Implementation of Depth First Search
 
 **Date:** 04-03-2025  
 **Register Number:** 212222040163  
