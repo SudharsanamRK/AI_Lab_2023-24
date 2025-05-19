@@ -1,41 +1,38 @@
-# Ex.No: 10 Learning – Use Supervised Learning  
-### DATE: 13/05/2025                                                                        
-### REGISTER NUMBER : 212222040163
----
-### AIM: 
+# Ex.No: 13 - Machine Learning: MiniProject
+**Date:** 13-05-2025  
+**Register Number:** 212222040163 
+
+
+## AIM: 
 To write a program to train the classifier for Linear Regression, Support Vector Model, Logistic Regression, Random Forest, etc.
-###  Algorithm:
-Import Libraries:
 
-Import pandas, numpy, sklearn, and other necessary libraries.
+## Algorithm:
+1. **Import Libraries:**  
+   Import pandas, numpy, sklearn, and other necessary libraries.
 
-Load Dataset:
+2. **Load Dataset:**  
+   Read the dataset (e.g., heart disease, diabetes, etc.) using pandas.
 
-Read the dataset (e.g., heart disease, diabetes, etc.) using pandas.
+3. **Preprocess Data:**  
+   Handle missing values, encode categorical variables, and normalize features.
 
-Preprocess Data:
+4. **Split Data:**  
+   Divide the dataset into training and testing sets using `train_test_split`.
 
-Handle missing values, encode categorical variables, and normalize features.
+5. **Train Model:**  
+   Use a supervised learning algorithm like Random Forest, Logistic Regression, or SVM.
 
-Split Data:
+6. **Evaluate Model:**  
+   Predict using test data and evaluate accuracy, precision, recall, and F1-score.
 
-Divide the dataset into training and testing sets using train_test_split.
+7. **Save Model:**  
+   Export the trained model using `joblib` or `pickle` for future predictions.
 
-Train Model:
 
-Use a supervised learning algorithm like Random Forest, Logistic Regression, or SVM.
+## Program:
 
-Evaluate Model:
-
-Predict using test data and evaluate accuracy, precision, recall, and F1-score.
-
-Save Model:
-
-Export the trained model using joblib or pickle for future predictions.
-
-### Program:
-1. Heart Disease Prediction
-
+### 1. Heart Disease Prediction
+```python
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -62,11 +59,10 @@ print("Heart Disease Accuracy:", accuracy)
 
 # Save model
 joblib.dump(model, "heart_disease_model.sav")
+```
 
-
-
- 2. Diabetes Prediction
-
+### 2. Diabetes Prediction
+```
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
@@ -93,10 +89,10 @@ print("Diabetes Accuracy:", accuracy)
 
 # Save model
 joblib.dump(model, "diabetes_model.sav")
+```
 
-
-3. Thyroid Disease Prediction
-
+### 3. Thyroid Disease Prediction
+```
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import GradientBoostingClassifier
@@ -123,10 +119,10 @@ print("Thyroid Prediction Accuracy:", accuracy)
 
 # Save model
 joblib.dump(model, "thyroid_model.sav")
+```
 
-
-4. Lung Cancer Prediction
-
+### 4. Lung Cancer Prediction
+```
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -156,11 +152,10 @@ print("Lung Cancer Prediction Accuracy:", accuracy)
 
 # Save model
 joblib.dump(model, "lungs_disease_model.sav")
+```
 
-
-
-5. Parkinson’s Disease Detection
-
+### 5. Parkinson’s Disease Detection
+```
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
@@ -187,12 +182,10 @@ print("Parkinson’s Accuracy:", accuracy)
 
 # Save model
 joblib.dump(model, "parkinsons_model.sav")
-
-
-
+```
 
 ## Output:
-
+![image](https://github.com/user-attachments/assets/d5e98720-9f70-4b6c-8a00-a284df22c33a)
 
 ### Result:
-Thus the system was trained successfully and the prediction was carried out.
+Thus, the system was trained successfully and the prediction was carried out.
