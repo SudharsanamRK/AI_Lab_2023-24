@@ -1,21 +1,24 @@
-# Ex.No: 4   Implementation of Alpha Beta Pruning 
-### DATE: 11-03-2025                                                                             
-### REGISTER NUMBER : 212222040163
-### AIM: 
-Write a Alpha beta pruning algorithm to find the optimal value of MAX Player from the given graph.
-### Steps:
-1. Start the program
-2. Initially  assign MAX and MIN value as 1000 and -1000.
-3.  Define the minimax function  using alpha beta pruning
-4.  If maximum depth is reached then return the score value of leaf node. [depth taken as 3]
-5.  In Max player turn, assign the alpha value by finding the maximum value by calling the minmax function recursively.
-6.  In Min player turn, assign beta value by finding the minimum value by calling the minmax function recursively.
-7.  Specify the score value of leaf nodes and Call the minimax function.
-8.  Print the best value of Max player.
-9.  Stop the program. 
+# Ex No: 4 - Implementation of Alpha Beta Pruning
 
-### Program:
-```py
+**Date:** 18-03-2025  
+**Register Number:** 212222040163  
+
+## AIM:
+Write an Alpha-Beta Pruning algorithm to find the optimal value of the MAX player from the given game tree.
+
+## STEPS:
+1. Start the program.  
+2. Initially assign MAX and MIN values as +∞ and -∞ respectively.  
+3. Define the `minimax()` function using Alpha-Beta pruning.  
+4. If maximum depth is reached (depth = 3), return the score value of the corresponding leaf node.  
+5. During the MAX player’s turn, assign the alpha value by finding the maximum value through recursive calls.  
+6. During the MIN player’s turn, assign the beta value by finding the minimum value through recursive calls.  
+7. Specify the score values of the leaf nodes and call the `minimax()` function.  
+8. Print the best value for the MAX player.  
+9. Stop the program.
+
+## PROGRAM:
+```python
 import math
 
 INF = math.inf
@@ -50,6 +53,7 @@ if __name__ == "__main__":
     max_depth = int(math.log2(len(values))) 
 
     print("Optimal value:", alpha_beta_pruning(0, 0, True, values, -INF, INF, max_depth))
+
 ```
 
 ### Output:
@@ -57,4 +61,4 @@ if __name__ == "__main__":
 
 
 ### Result:
-Thus the best score of max player was found using Alpha Beta Pruning.
+Thus, the best score of the MAX player was successfully found using the Alpha-Beta Pruning algorithm.
