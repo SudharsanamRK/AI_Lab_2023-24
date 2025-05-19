@@ -1,26 +1,23 @@
-# Ex.No: 6   Logic Programming – Towers of Hanoi Problem   
-### DATE: 08-04-2025                                                                           
-### REGISTER NUMBER : 212222040163
+# Ex No: 6 - Logic Programming: Towers of Hanoi Problem
 
----
+**Date:** 25-03-2025  
+**Register Number:** 212222040163  
 
-### AIM: 
-To write a logic program to solve the Towers of Hanoi problem using SWI-PROLOG.
+## AIM:
+To write a logic program to solve the **Towers of Hanoi** problem using **SWI-PROLOG**.
 
-### Algorithm:
-1. Start the program.  
-2. Write rules for finding the solution of the Towers of Hanoi in SWI-PROLOG.  
-3.  
-   a) If there is only **one disk**, move the disk from X to Y.  
-   
-   b) If the number of disks is greater than 1:  
-   - i) Move **N-1 disks** from source peg X to auxiliary peg Z.  
-   - ii) Move the **Nth disk** from source peg X to destination peg Y.  
-   - iii) Move the **N-1 disks** from auxiliary peg Z to destination peg Y.  
-4. Run the program to get the solution steps.  
-5. Stop the program.
+## ALGORITHM:
+1. **Start** the program.  
+2. Write rules to solve the Towers of Hanoi problem in Prolog.  
+   - a) If there is only **one disk**, move the disk from X to Y.  
+   - b) If the number of disks is greater than 1:  
+     - i) Move **N−1 disks** from source peg **X** to auxiliary peg **Z**.  
+     - ii) Move the **Nth disk** from **X** to **Y**.  
+     - iii) Move the **N−1 disks** from auxiliary peg **Z** to destination peg **Y**.  
+3. Run the program to display the steps.  
+4. **Stop** the program.
 
-### Program:
+## PROGRAM:
 ```prolog
 % Base Case
 move(1, X, Y, _) :-
@@ -38,6 +35,5 @@ move(N, X, Y, Z) :-
 ### Output:
 ![image](https://github.com/user-attachments/assets/604c89d9-9c8c-4403-9ad1-c2bd0d1bb128)
 
-
 ### Result:
-Thus, the solution of the Towers of Hanoi problem was found using logic programming.
+Thus, the solution to the Towers of Hanoi problem was successfully implemented using logic programming in SWI-PROLOG.
