@@ -100,4 +100,4 @@ american(west).
 ![image](https://github.com/user-attachments/assets/b0abca73-6685-4401-895d-29acb6f74ada)
 
 ### Result:
-Thus the Prolog programs were executed successfully and the answer to the queries was found.
+Thus, the Prolog programs were executed successfully and the answer to the queries was found.
