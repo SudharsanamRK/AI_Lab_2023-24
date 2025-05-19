@@ -1,4 +1,4 @@
-# Experiment No: 7 — Logic Programming: Logic Circuit Design
+# Ex No: 7 - Logic Programming: Logic Circuit Design
 
 **Date:** 01-04-2025  
 **Register Number:** 212222040163  
