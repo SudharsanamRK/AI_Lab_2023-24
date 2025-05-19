@@ -1,20 +1,21 @@
-# Ex.No: 8  Logic Programming –  Medical Diagnosis Expert System
-### DATE: 22-04-2025                                                                           
-### REGISTER NUMBER : 212222040163
+# Ex No: 8 - Logic Programming: Medical Diagnosis Expert System
 
-### AIM: 
-Write a Prolog program to build a medical Diagnosis Expert System.
+**Date:** 22-04-2025  
+**Register Number:** 212222040163  
 
-###  Algorithm:
-1. Start the program.
-2. Write the rules for each diseases.
-3. If patient have mumps then symptoms are fever and swollen glands.
-4. If patient have cough, sneeze and running nose then disease is measles.
-5. if patient have symptoms headache ,sneezing ,sore_throat, runny_nose and  chills then disease is common cold.
-6. Define rules for all disease.
-7. Call the predicates and Collect the symptoms of Patient and give the hypothesis of disease.
-        
-### Program:
+## AIM:  
+Write a Prolog program to build a Medical Diagnosis Expert System.
+
+## ALGORITHM:  
+1. Start the program.  
+2. Write rules for each disease.  
+3. If patient has mumps, symptoms include fever and swollen glands.  
+4. If patient has cough, sneeze, and runny nose, the disease is measles.  
+5. If patient has headache, sneezing, sore throat, runny nose, and chills, the disease is common cold.  
+6. Define rules for all diseases.  
+7. Call the predicates, collect symptoms of the patient, and give the diagnosis hypothesis.
+
+## PROGRAM:
 ```prolog
 hypothesis(Patient, german_measles) :-
     symptom(Patient, fever),
@@ -75,4 +76,4 @@ symptom(sita, cough).
 ![image](https://github.com/user-attachments/assets/6b3b8da9-01fb-4e93-88e2-333fe4b808c2)
 
 ### Result:
-Thus the simple medical diagnosis system was built sucessfully.
+Thus, a simple medical diagnosis expert system was successfully built using Prolog.
